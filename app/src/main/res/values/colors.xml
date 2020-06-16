@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#F6E27F</color>
+    <color name="mapboxBlue">#F6E27F</color>
+    <color name="notificiationStockRouge">#d50000</color>
+    <color name="notificiationStockVert">#00ff00</color>
+    <color name="textNotificationStock">#ffffff</color>
+    <color name="couleurBackgroundAccueil">#E4D9A2</color>
+    <color name="couleurImageViewAccueil">#E8E8EE</color>
+    <color name="notificationStockOrange">#FA7E02</color>
+    <color name="colorOfTextAlertBox">#CC0A0A</color>
+    <color name="colorOfBackgroundAlerBox">#172955</color>
+</resources>

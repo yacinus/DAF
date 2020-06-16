@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vue.ListClientsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/colorAccent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/backBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:src="@drawable/back" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@color/couleurBackgroundAccueil">
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/logodaf" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LISTE DES CLIENTS"
+                        android:textColor="#062DBD"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_marginTop="10dp"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/colorOfBackgroundAlerBox">
+
+                <TextView
+                    android:id="@+id/txtEts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:text="Etablissement"
+                    android:paddingLeft="10dp"
+                    android:background="#B7B8BE"
+                    android:textColor="@color/colorOfBackgroundAlerBox"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nom"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="1dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:background="#FFB7B8BE"
+                    android:textColor="@color/colorOfBackgroundAlerBox"/>
+
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lstClients"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:minHeight="500dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+

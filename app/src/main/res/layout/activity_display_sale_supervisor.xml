@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vue.DisplaySaleSupervisorActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/colorAccent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/backBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:src="@drawable/back" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="215dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@color/couleurBackgroundAccueil">
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/logodaf" />
+
+                    <TextView
+                        android:id="@+id/txtidVente"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vente"
+                        android:textColor="#062DBD"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="230dp"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/textview10"
+                                    android:textStyle="bold"
+                                    android:textSize="15sp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="10sp"
+                                    android:layout_weight="1"
+                                    android:text="ID Vendeur" />
+
+                                <TextView
+                                    android:id="@+id/txtIdVendeur"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="10dp"
+                                    android:textSize="15sp"
+                                    android:layout_weight="1" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/textview1"
+                                    android:textStyle="bold"
+                                    android:textSize="15sp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="10sp"
+                                    android:layout_weight="1"
+                                    android:text="ID Client" />
+
+                                <TextView
+                                    android:id="@+id/txtIdClient"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="10sp"
+                                    android:textSize="15sp"
+                                    android:layout_weight="1" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/textView2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="10sp"
+                                    android:textStyle="bold"
+                                    android:textSize="15sp"
+                                    android:layout_weight="1"
+                                    android:text="Etablissement" />
+
+                                <TextView
+                                    android:id="@+id/txtEtablissement"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="10dp"
+                                    android:textSize="15sp"
+                                    android:layout_weight="1" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/textView18"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textSize="15sp"
+                                    android:paddingLeft="10dp"
+                                    android:layout_weight="1"
+                                    android:text="Adresse" />
+
+                                <TextView
+                                    android:id="@+id/txtAdress"
+                                    android:textSize="15sp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="10dp"
+                                    android:layout_weight="1" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/textView13"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:paddingLeft="10dp"
+                                    android:text="Total"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txtTotal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="15sp"
+                                    android:paddingLeft="10dp"
+                                    android:layout_weight="1" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/textView15"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:textStyle="bold"
+                                    android:textSize="15sp"
+                                    android:paddingLeft="10dp"
+                                    android:layout_weight="1"
+                                    android:text="Accompte" />
+
+                                <TextView
+                                    android:id="@+id/txtAccompte"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="15sp"
+                                    android:paddingLeft="10dp"
+                                    android:layout_weight="1" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/textView16"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textSize="15sp"
+                                    android:paddingLeft="10dp"
+                                    android:layout_weight="1"
+                                    android:text="Solde" />
+
+                                <TextView
+                                    android:id="@+id/txtSolde"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="10dp"
+                                    android:textSize="15sp"
+                                    android:layout_weight="1" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/textView17"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="10dp"
+                                    android:textStyle="bold"
+                                    android:textSize="15sp"
+                                    android:layout_weight="1"
+                                    android:text="Date" />
+
+                                <TextView
+                                    android:id="@+id/txtDate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="10dp"
+                                    android:textSize="15sp"
+                                    android:layout_weight="1" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TableLayout
+                                    android:id="@+id/tableLayoutSuper"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+
+                                    <TableRow
+                                        android:id="@+id/txtRow1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_margin="1dp"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:layout_marginTop="1dp">
+
+                                        <TextView
+                                            android:id="@+id/txtDesignation"
+                                            android:background="@android:color/darker_gray"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:textStyle="bold"
+                                            android:layout_marginRight="1dp"
+                                            android:layout_marginTop="1dp"
+                                            android:paddingLeft="2dp"
+                                            android:textSize="12sp"
+                                            android:text="Désignation"/>
+
+                                        <TextView
+                                            android:id="@+id/txtCode"
+                                            android:background="@android:color/darker_gray"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:textStyle="bold"
+                                            android:layout_marginRight="1dp"
+                                            android:layout_marginTop="1dp"
+                                            android:textSize="12sp"
+                                            android:paddingLeft="5dp"
+                                            android:text="Code"/>
+
+                                        <TextView
+                                            android:id="@+id/txtQte"
+                                            android:background="@android:color/darker_gray"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:textStyle="bold"
+                                            android:layout_marginRight="1dp"
+                                            android:layout_marginTop="1dp"
+                                            android:textSize="12sp"
+                                            android:paddingLeft="5dp"
+                                            android:text="Qte"/>
+
+                                        <TextView
+                                            android:id="@+id/txtPrixUnitaire"
+                                            android:background="@android:color/darker_gray"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:textStyle="bold"
+                                            android:layout_marginTop="1dp"
+                                            android:textSize="12sp"
+                                            android:paddingRight="2dp"
+                                            android:text="Prix Unitaire"
+                                            android:paddingLeft="5dp"/>
+
+                                    </TableRow>
+                                </TableLayout>
+                            </LinearLayout>
+                        </ScrollView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+
