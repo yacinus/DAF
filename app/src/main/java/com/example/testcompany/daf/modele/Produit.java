@@ -1,5 +1,5 @@
 package com.example.testcompany.daf.modele;
-Test
+
 import org.json.JSONArray;
 
 import java.util.ArrayList;
